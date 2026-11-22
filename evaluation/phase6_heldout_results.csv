@@ -1,0 +1,41 @@
+case_id,category,expected_conflict,predicted_conflict,correct,detected_topics,note
+RF-C1,refund_window,True,True,True,refund_window_days,Different explicit refund windows
+RF-C2,refund_window,True,True,True,refund_window_days,Different explicit refund windows
+RF-C3,refund_window,True,True,True,refund_window_days,Different explicit refund windows
+RF-C4,refund_window,True,True,True,refund_window_days,Different explicit refund windows
+RF-M1,refund_window,False,False,True,,Matching explicit refund windows
+RF-M2,refund_window,False,False,True,,Matching explicit refund windows
+RF-M3,refund_window,False,False,True,,Matching explicit refund windows
+RF-M4,refund_window,False,False,True,,Matching explicit refund windows
+PW-C1,password_minimum,True,True,True,password_min_length,Different explicit password minimums
+PW-C2,password_minimum,True,True,True,password_min_length,Different explicit password minimums
+PW-C3,password_minimum,True,True,True,password_min_length,Different explicit password minimums
+PW-C4,password_minimum,True,True,True,password_min_length,Different explicit password minimums
+PW-M1,password_minimum,False,False,True,,Matching explicit password minimums
+PW-M2,password_minimum,False,False,True,,Matching explicit password minimums
+PW-M3,password_minimum,False,False,True,,Matching explicit password minimums
+PW-M4,password_minimum,False,False,True,,Matching explicit password minimums
+DR-C1,data_retention,True,True,True,data_retention_days,Different explicit retention periods
+DR-C2,data_retention,True,True,True,data_retention_days,Different explicit retention periods
+DR-C3,data_retention,True,True,True,data_retention_days,Different explicit retention periods
+DR-C4,data_retention,True,True,True,data_retention_days,Different explicit retention periods
+DR-M1,data_retention,False,False,True,,Matching explicit retention periods
+DR-M2,data_retention,False,False,True,,Matching explicit retention periods
+DR-M3,data_retention,False,False,True,,Matching explicit retention periods
+DR-M4,data_retention,False,False,True,,Matching explicit retention periods
+SH-C1,support_hours,True,True,True,support_hours,Different explicit support-hour claims
+SH-C2,support_hours,True,True,True,support_hours,Different explicit support-hour claims
+SH-C3,support_hours,True,True,True,support_hours,Different explicit support-hour claims
+SH-C4,support_hours,True,False,False,,Different explicit support-hour claims
+SH-M1,support_hours,False,False,True,,Matching explicit support-hour claims
+SH-M2,support_hours,False,False,True,,Matching explicit support-hour claims
+SH-M3,support_hours,False,False,True,,Matching explicit support-hour claims
+SH-M4,support_hours,False,False,True,,Matching explicit support-hour claims
+ORG-G1,organization_guard,False,False,True,,Different organizations; no comparison expected
+ORG-G2,organization_guard,False,False,True,,Different organizations; no comparison expected
+ORG-G3,organization_guard,False,False,True,,Different organizations; no comparison expected
+ORG-G4,organization_guard,False,False,True,,Different organizations; no comparison expected
+OUT-G1,unsupported_claim,False,False,True,,Unsupported topic; no structured comparison expected
+OUT-G2,unsupported_claim,False,False,True,,Unsupported topic; no structured comparison expected
+OUT-G3,unsupported_claim,False,False,True,,Unsupported topic; no structured comparison expected
+OUT-G4,unsupported_claim,False,False,True,,Unsupported topic; no structured comparison expected

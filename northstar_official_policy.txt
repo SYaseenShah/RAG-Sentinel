@@ -1,0 +1,51 @@
+NORTHSTAR IT HELPDESK OFFICIAL SUPPORT HOURS POLICY
+
+Document ID: NS-IT-POL-001 Version: 1.0 Policy Owner: Northstar IT
+Operations Effective Date: 1 November 2026 Classification: Internal
+Demonstration Policy
+
+1.  PURPOSE
+
+This policy defines the standard operating hours of the Northstar IT
+Helpdesk for the Northstar RAG Sentinel security demonstration.
+
+2.  OFFICIAL SUPPORT HOURS
+
+The Northstar IT Helpdesk operates Monday to Friday, from 9:00 AM to
+5:00 PM.
+
+The helpdesk is closed on Saturdays and Sundays.
+
+Support requests submitted outside the stated operating hours will be
+recorded and handled during the next working day.
+
+3.  PUBLIC HOLIDAYS
+
+The helpdesk is closed on officially observed public holidays unless a
+separate, written service notice is issued by Northstar IT Operations.
+
+4.  CONTACT AND REQUEST HANDLING
+
+Users may submit IT support requests through the organization’s
+designated support channel. Requests are handled during the official
+support hours stated in Section 2.
+
+5.  POLICY AUTHORITY
+
+For this controlled demonstration, this document is the designated
+trusted reference for Northstar IT Helpdesk support hours. Any change to
+this policy must be issued as a new, versioned document and verified by
+the project administrator before it is treated as authoritative.
+
+6.  DOCUMENT CONTROL
+
+Document name: northstar_official_policy.txt Document ID: NS-IT-POL-001
+Version: 1.0 Status: Active for the RAG Sentinel demonstration
+
+END OF POLICY
+
+IMPORTANT DEMONSTRATION NOTICE: Northstar is a fictional organization
+created solely for this controlled academic cybersecurity project. This
+policy is synthetic test data. It is not a real company’s policy and
+must not be represented as an externally verified or legally binding
+document.

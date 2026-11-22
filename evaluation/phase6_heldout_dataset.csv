@@ -1,0 +1,121 @@
+case_id,category,reference,candidate,expected_conflict,note
+RF-C1,refund_window,"Organization: Cedar Clinic
+Refunds are processed within 14 days.","Organization: Cedar Clinic
+Refunds are processed within 30 days.",True,Different explicit refund windows
+RF-C2,refund_window,"Organization: Maple Store
+Refunds are processed within 7 days.","Organization: Maple Store
+Refunds are processed within 21 days.",True,Different explicit refund windows
+RF-C3,refund_window,"Organization: Orion Market
+Refunds are processed within 10 days.","Organization: Orion Market
+Refunds are processed within 45 days.",True,Different explicit refund windows
+RF-C4,refund_window,"Organization: Pine Retail
+Refunds are processed within 15 days.","Organization: Pine Retail
+Refunds are processed within 5 days.",True,Different explicit refund windows
+RF-M1,refund_window,"Organization: Cedar Clinic
+Refunds are processed within 14 days.","Organization: Cedar Clinic
+Refunds are processed within 14 days.",False,Matching explicit refund windows
+RF-M2,refund_window,"Organization: Maple Store
+Refunds are processed within 7 days.","Organization: Maple Store
+Refunds are processed within 7 days.",False,Matching explicit refund windows
+RF-M3,refund_window,"Organization: Orion Market
+Refunds are processed within 10 days.","Organization: Orion Market
+Refunds are processed within 10 days.",False,Matching explicit refund windows
+RF-M4,refund_window,"Organization: Pine Retail
+Refunds are processed within 15 days.","Organization: Pine Retail
+Refunds are processed within 15 days.",False,Matching explicit refund windows
+PW-C1,password_minimum,"Organization: Cedar Clinic
+Passwords must be at least 12 characters.","Organization: Cedar Clinic
+Passwords must be at least 8 characters.",True,Different explicit password minimums
+PW-C2,password_minimum,"Organization: Maple Store
+Password minimum of 14 characters.","Organization: Maple Store
+Password minimum of 10 characters.",True,Different explicit password minimums
+PW-C3,password_minimum,"Organization: Orion Market
+Passwords require minimum 16 characters.","Organization: Orion Market
+Passwords require minimum 12 characters.",True,Different explicit password minimums
+PW-C4,password_minimum,"Organization: Pine Retail
+Passwords must be at least 10 characters.","Organization: Pine Retail
+Passwords must be at least 6 characters.",True,Different explicit password minimums
+PW-M1,password_minimum,"Organization: Cedar Clinic
+Passwords must be at least 12 characters.","Organization: Cedar Clinic
+Passwords must be at least 12 characters.",False,Matching explicit password minimums
+PW-M2,password_minimum,"Organization: Maple Store
+Password minimum of 14 characters.","Organization: Maple Store
+Password minimum of 14 characters.",False,Matching explicit password minimums
+PW-M3,password_minimum,"Organization: Orion Market
+Passwords require minimum 16 characters.","Organization: Orion Market
+Passwords require minimum 16 characters.",False,Matching explicit password minimums
+PW-M4,password_minimum,"Organization: Pine Retail
+Passwords must be at least 10 characters.","Organization: Pine Retail
+Passwords must be at least 10 characters.",False,Matching explicit password minimums
+DR-C1,data_retention,"Organization: Cedar Clinic
+Records are retained for 90 days.","Organization: Cedar Clinic
+Records are retained for 180 days.",True,Different explicit retention periods
+DR-C2,data_retention,"Organization: Maple Store
+Customer data is stored for 30 days.","Organization: Maple Store
+Customer data is stored for 60 days.",True,Different explicit retention periods
+DR-C3,data_retention,"Organization: Orion Market
+We keep records for 365 days.","Organization: Orion Market
+We keep records for 730 days.",True,Different explicit retention periods
+DR-C4,data_retention,"Organization: Pine Retail
+Data retention is 45 days.","Organization: Pine Retail
+Data retention is 15 days.",True,Different explicit retention periods
+DR-M1,data_retention,"Organization: Cedar Clinic
+Records are retained for 90 days.","Organization: Cedar Clinic
+Records are retained for 90 days.",False,Matching explicit retention periods
+DR-M2,data_retention,"Organization: Maple Store
+Customer data is stored for 30 days.","Organization: Maple Store
+Customer data is stored for 30 days.",False,Matching explicit retention periods
+DR-M3,data_retention,"Organization: Orion Market
+We keep records for 365 days.","Organization: Orion Market
+We keep records for 365 days.",False,Matching explicit retention periods
+DR-M4,data_retention,"Organization: Pine Retail
+Data retention is 45 days.","Organization: Pine Retail
+Data retention is 45 days.",False,Matching explicit retention periods
+SH-C1,support_hours,"Organization: Cedar Clinic
+Support is available Monday to Friday, 9 AM to 5 PM.","Organization: Cedar Clinic
+Support is available 24/7.",True,Different explicit support-hour claims
+SH-C2,support_hours,"Organization: Maple Store
+Helpdesk operates Monday to Friday, 9:00 AM to 5:00 PM.","Organization: Maple Store
+Helpdesk is available 24 hours a day.",True,Different explicit support-hour claims
+SH-C3,support_hours,"Organization: Orion Market
+Service hours are Monday through Friday, 9 AM–5 PM.","Organization: Orion Market
+Service is available around the clock.",True,Different explicit support-hour claims
+SH-C4,support_hours,"Organization: Pine Retail
+Office hours are Monday to Friday, 9 AM to 5 PM.","Organization: Pine Retail
+Office support is available seven days a week.",True,Different explicit support-hour claims
+SH-M1,support_hours,"Organization: Cedar Clinic
+Support is available Monday to Friday, 9 AM to 5 PM.","Organization: Cedar Clinic
+Support is available Monday to Friday, 9:00 AM to 5:00 PM.",False,Matching explicit support-hour claims
+SH-M2,support_hours,"Organization: Maple Store
+Helpdesk operates Monday to Friday, 9:00 AM to 5:00 PM.","Organization: Maple Store
+Helpdesk operates Monday to Friday, 9 AM to 5 PM.",False,Matching explicit support-hour claims
+SH-M3,support_hours,"Organization: Orion Market
+Office hours Monday to Friday 9 AM to 5 PM.","Organization: Orion Market
+Office hours Monday to Friday 9:00 AM to 5:00 PM.",False,Matching explicit support-hour claims
+SH-M4,support_hours,"Organization: Pine Retail
+Service hours Monday to Friday 9 AM to 5 PM.","Organization: Pine Retail
+Service hours Monday to Friday 9 AM to 5 PM.",False,Matching explicit support-hour claims
+ORG-G1,organization_guard,"Organization: Cedar Clinic
+Refunds are processed within 14 days.","Organization: Maple Store
+Refunds are processed within 30 days.",False,Different organizations; no comparison expected
+ORG-G2,organization_guard,"Organization: Orion Market
+Passwords must be at least 12 characters.","Organization: Pine Retail
+Passwords must be at least 8 characters.",False,Different organizations; no comparison expected
+ORG-G3,organization_guard,"Organization: Maple Store
+Records are retained for 90 days.","Organization: Cedar Clinic
+Records are retained for 180 days.",False,Different organizations; no comparison expected
+ORG-G4,organization_guard,"Organization: Pine Retail
+Support is available Monday to Friday, 9 AM to 5 PM.","Organization: Orion Market
+Support is available 24/7.",False,Different organizations; no comparison expected
+OUT-G1,unsupported_claim,"Organization: Cedar Clinic
+The clinic has three branches.","Organization: Cedar Clinic
+The clinic has five branches.",False,Unsupported topic; no structured comparison expected
+OUT-G2,unsupported_claim,"Organization: Maple Store
+The store is located downtown.","Organization: Maple Store
+The store is located uptown.",False,Unsupported topic; no structured comparison expected
+OUT-G3,unsupported_claim,"Organization: Orion Market
+The service uses a blue logo.","Organization: Orion Market
+The service uses a green logo.",False,Unsupported topic; no structured comparison expected
+OUT-G4,unsupported_claim,"Organization: Pine Retail
+The company was founded in 2010.","Organization: Pine Retail
+The company was founded in 2015.",False,Unsupported topic; no structured comparison expected

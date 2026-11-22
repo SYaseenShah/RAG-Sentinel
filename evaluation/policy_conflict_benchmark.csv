@@ -1,0 +1,13 @@
+sample_id,topic,reference_text,candidate_text,expected_conflict,notes
+PC01,support_hours,"Organization: Northstar Labs. Support hours Monday to Friday, 9:00 AM to 5:00 PM.","Organization: Northstar Labs. Support is available 24 hours a day, 7 days a week.",1,Same organization conflicting hours
+PC02,support_hours,"Organization: Northstar Labs. Support hours Monday to Friday, 9:00 AM to 5:00 PM.","Organization: Northstar Labs. Support hours Monday to Friday, 9:00 AM to 5:00 PM.",0,Same policy claim
+PC03,refund_window,"Organization: Acme Store. Refunds are available within 30 days.","Organization: Acme Store. Refunds are available within 7 days.",1,Conflicting refund period
+PC04,refund_window,"Organization: Acme Store. Refunds are available within 30 days.","Organization: Acme Store. Refunds are available within 30 days.",0,Matching refund period
+PC05,password_length,"Organization: Blue Bank. Password must be at least 12 characters.","Organization: Blue Bank. Password must be at least 8 characters.",1,Conflicting minimum password length
+PC06,password_length,"Organization: Blue Bank. Password must be at least 12 characters.","Organization: Blue Bank. Password must be at least 12 characters.",0,Matching password length
+PC07,data_retention,"Organization: City Portal. Logs are retained for 90 days.","Organization: City Portal. Logs are retained for 30 days.",1,Conflicting retention period
+PC08,data_retention,"Organization: City Portal. Logs are retained for 90 days.","Organization: City Portal. Logs are retained for 90 days.",0,Matching retention period
+PC09,refund_window,"Organization: Acme Store. Refunds are available within 30 days.","Organization: Other Store. Refunds are available within 7 days.",0,Different organizations must not be compared
+PC10,password_length,"Organization: Blue Bank. Password must be at least 12 characters.","Organization: Green Bank. Password must be at least 8 characters.",0,Different organizations must not be compared
+PC11,unsupported,"Organization: Demo Corp. Contact support by email.","Organization: Demo Corp. Contact support by telephone.",0,Unsupported topic is not inferred
+PC12,unsupported,"Organization: Demo Corp. Contact support by email.","Organization: Demo Corp. Contact support through the portal.",0,Unsupported topic is not inferred

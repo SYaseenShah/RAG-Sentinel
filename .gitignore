@@ -1,0 +1,44 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environment & secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Local persistent vector database & uploads
+database/chroma/
+data/uploads/
+data/review/
+data/quarantine/
+data/approved_documents/
+
+# Local security data & logs
+database/security_registry.json
+database/users.json
+database/audit_log.jsonl
+*.log
+*.tmp
+
+# IDE & OS metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Local datasets and generated files
+data/
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Model and experiment caches
+.cache/
+models/
